@@ -25,6 +25,10 @@ Weather MCP Server provides weather information for cities around the world thro
 ## Installation
 
 1. Clone the repository
+```bash
+git clone https://github.com/Annihilater/mcp-server-get-weather
+```
+
 2. Install dependencies:
 
 ```bash
