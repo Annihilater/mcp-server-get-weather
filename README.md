@@ -1,6 +1,6 @@
 # Weather MCP Server
 
-[中文文档](./README_zh-CN.md) | English
+[中文文档](./README_CN.md) | English
 
 A simple weather information service built with Model Context Protocol (MCP).
 
@@ -44,6 +44,26 @@ Start the server:
 ```bash
 npx @modelcontextprotocol/inspector node dist/index.js
 ```
+
+## MCP Configuration
+
+要在Cursor中使用此天气服务，需要在`~/.cursor/mcp.json`文件中添加以下配置：
+
+```json
+"mcp-server-get-weather": {
+  "command": "node",
+  "args": [
+    "<path-to-your-project>/dist/index.js"
+  ]
+}
+```
+
+将`<path-to-your-project>`替换为实际项目路径。配置完成后，可以通过MCP工具调用`mcp_mcp_server_get_weather_get_weather`函数来获取天气信息。
+
+### Example
+
+![MCP Config](./images/1.png)
+![MCP Usage](./images/2.png)
 
 ## API Reference
 
