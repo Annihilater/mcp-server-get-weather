@@ -1,5 +1,7 @@
 # Weather MCP Server
 
+[中文文档](./README_zh-CN.md) | English
+
 A simple weather information service built with Model Context Protocol (MCP).
 
 ## Overview
