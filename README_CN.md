@@ -23,6 +23,10 @@
 ## 安装方法
 
 1. 克隆仓库
+```bash
+git clone https://github.com/Annihilater/mcp-server-get-weather
+```
+
 2. 安装依赖：
 
 ```bash
