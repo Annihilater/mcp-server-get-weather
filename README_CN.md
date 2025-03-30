@@ -43,6 +43,26 @@ npm run build
 npx @modelcontextprotocol/inspector node dist/index.js
 ```
 
+## MCP 配置
+
+要在Cursor中使用此天气服务，需要在`~/.cursor/mcp.json`文件中添加以下配置：
+
+```json
+"mcp-server-get-weather": {
+  "command": "node",
+  "args": [
+    "<path-to-your-project>/dist/index.js"
+  ]
+}
+```
+
+将`<path-to-your-project>`替换为实际项目路径。配置完成后，可以通过MCP工具调用`mcp_mcp_server_get_weather_get_weather`函数来获取天气信息。
+
+### 示例
+
+![MCP 配置](./images/1.png)
+![MCP 用法](./images/2.png)
+
 ## API 参考
 
 ### get_weather
